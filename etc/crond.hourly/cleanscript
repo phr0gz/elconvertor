@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/find /convert/upload/* -mmin +30 -exec rm {} \;
+/usr/bin/find /convert/download/* -mmin +30 -exec rm {} \;
+

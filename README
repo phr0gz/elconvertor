@@ -1,0 +1,48 @@
+NAME
+    ELCONVERTOR
+
+DESCRIPTION
+    Simple php web convertor for linux, can convert everything like libreoffice.
+
+INSTALL
+    install apache, php, unoconv,and libreoffice
+    create one directory (/convert) and some subdir (/convert/download /convert/upload) on root level
+    add cron job (move cleanscript to etc/crond.hourly/)
+    add init script (move loffice to etc/init.d/)
+    setup the init script to run at startup
+    in up.php modify all needed path, and all that things in french language
+    in convert.php change $command path if needed
+
+USAGE
+    from you computer go to the url of the converter server http://servername/up.php and voila
+
+TO DO
+    add multilanguage
+    clean the code
+    maybe something more simple to deploy
+
+HOW TO CONTRIBUTE ?
+    Any contribution to build a better tool is greatly appreciated!
+    
+
+ACKNOWLEDGEMENT
+    Thanks to LibreOffice, UNOCONV dev-team for their great
+    softwares.
+
+Any help will be greatly appreciated!
+
+LICENSE
+     Copyright (c) 2012-2013 Ludovic HARLAUT - All rights reserved.
+
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the
+    Free Software Foundation, either version 3 of the License, or any later
+    version.
+
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+    Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program. If not, see < http://www.gnu.org/licenses/ >.
